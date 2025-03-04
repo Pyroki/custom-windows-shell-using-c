@@ -1,0 +1,32 @@
+to run:
+gcc myshell.c -o myshell.exe -I C:\Users\MONISH\anaconda3\Library\include -L C:\Users\MONISH\anaconda3\Library\lib -lssl -lcrypto
+
+.\myshell.exe
+
+
+
+shell commands:
+1. Encrypt/Decrypt a File
+Command: encrypt <filename>
+Example: encrypt secret.txt
+Description: XOR encrypts or decrypts the specified file using the key 0x5A. The encryption is reversible.
+
+2. Hash a String (SHA-256)
+Command: hash <string>
+Example: hash hello
+Description: Computes the SHA-256 hash of the given string and prints it.
+
+3. Hash a File (SHA-256)
+Command: hashfile <filename>
+Example: hashfile document.txt
+Description: Computes the SHA-256 hash of the given file and prints it.
+
+4. Execute System Commands
+Command: <any Windows command>
+Example: dir, echo Hello, notepad
+Description: Executes standard Windows shell commands.
+
+5. Exit the Shell
+Command: exit
+Example: exit
+Description: Closes the shell.
